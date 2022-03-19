@@ -30,10 +30,8 @@ tabButtons.forEach((tabButton) => {
       }
     })
   })
- 
-})
 
- tabButtons.forEach((tabButton, index) => {
+   tabButtons.forEach((tabButton, index) => {
    tabButton.addEventListener('click', () => {
      sectionTitles.forEach((title, indexTitle) => {
       if (index === indexTitle) {
@@ -46,4 +44,8 @@ tabButtons.forEach((tabButton) => {
   
     })
  })
+ 
+})
+
+
 
