@@ -15,6 +15,8 @@ const changeContent = (array, value) => {
 
 tabButtons.forEach((tabButton) => {
   tabButton.addEventListener('click', (event) => {
+
+
     const dataValue = tabButton.dataset.tabsHandler
 
     changeContent(tabDescriptions, dataValue)
@@ -31,13 +33,13 @@ tabButtons.forEach((tabButton) => {
  
 })
 
- sectionTitles.forEach((sectionTitle, index) => {
-   sectionTitle.addEventListener('click', (event) => {
+ tabButtons.forEach((tabButton, index) => {
+   tabButton.addEventListener('click', () => {
      sectionTitles.forEach((title, indexTitle) => {
       if (index === indexTitle) {
-        title.classList.add('hidden')
-      } else {
         title.classList.remove('hidden')
+      } else {
+        title.classList.add('hidden')
       }
      })
      
