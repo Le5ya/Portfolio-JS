@@ -3,7 +3,7 @@ const menu = document.querySelector('.menu')
 const menuLinks = document.querySelectorAll('.menu-list__item')
 
 burger.addEventListener('click', ()=> {
- menu.classList.add('menu-active')
+ menu.classList.toggle('menu-active')
 })
 menuLinks.forEach((link) => {
  link.addEventListener('click', ()=> {
